@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redactr</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+  <h1 class="page-title">
+    Redactr
+    <span>By Circle 306</span>
+  </h1>
+
+  <!--   Form -->
+  <div class="form-wrapper">
+    <form id="redactrForm">
+      <!--   TextArea -->
+      <div class="input-wrapper">
+        <label for="textBody">Enter Text</label>
+        <textarea class="input textarea" name="textBody" id="textBody" rows="5"></textarea>
+      </div>
+      <!--   input for comma-seperated list of words to redact -->
+      <div class="input-wrapper">
+        <label for="textToRedact">Words to redact</label>
+        <input type="text" class="input textfield" name="textToRedact" id="textToRedact">
+      </div>
+      <div class="input-wrapper">
+        <label for="scrambleChar">Scramble Character</label>
+        <input type="text" class="input textfield" name="scrambleChar" id="scrambleChar">
+      </div>
+      <button type="button" class="button" id="submitButton">Redact Text</button>
+    </form>
+  </div>
+  <!--   Element to Display redacted result -->
+  <div class="redactr-display"></div>
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
